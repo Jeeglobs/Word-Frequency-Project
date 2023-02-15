@@ -1,4 +1,4 @@
-import string
+# import string
 
 STOP_WORDS = [
     'a', 'an', 'and', 'are', 'as', 'at', 'be', 'by', 'for', 'from', 'has', 'he',
@@ -37,13 +37,22 @@ def open_file(file):
     word_list = stripped_file.split()
     cleaned_list = remove_stop_words(word_list)
     print(cleaned_list)
+    return cleaned_list
 
 
 def print_word_freq(file):
     """Read in `file` and print out the frequency of words in that file."""
     # 1. use `open` to read a text file
     words_to_count = open_file(file)
-    word_count = {}
+    word_count = {
+        # 'new': words_to_count.count('new')
+    }
+    for word in words_to_count:
+        if word in word_count.keys():
+            word_count[word] += 1
+        else:
+            word_count[word] = 1
+    print(word_count)
     # loop through the list of words, and update the dictionary to indicate how many of each we have
 
 
