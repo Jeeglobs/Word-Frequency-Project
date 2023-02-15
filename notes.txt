@@ -1,0 +1,6 @@
+1. use `open` to read a text file
+2. remove punctuation
+3. normalize all words to lowercase
+4. remove "stop words"
+5. count the frequency of words
+6. display a count in the console of words in descending frequency
