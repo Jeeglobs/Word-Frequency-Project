@@ -63,6 +63,18 @@ def print_word_freq(file):
     return sorted_word_count
     # loop through the list of words, and update the dictionary to indicate how many of each we have
 
+    # need to print:
+    # no. of spaces === len(longest key) - len(current key)
+    # layout: spaces, current key, vertical line, freq, stars === freq
+
+
+def add_stars(tuples):
+    word_freq = open_file(file)
+    for tuple in tuples:
+        stars = tuple[1] + ' ' + '*'*tuple[1]
+    print(stars)
+    return stars
+
 
 if __name__ == "__main__":
     import argparse

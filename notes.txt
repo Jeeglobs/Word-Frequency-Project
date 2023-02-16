@@ -4,3 +4,6 @@
 4. remove "stop words"
 5. count the frequency of words
 6. display a count in the console of words in descending frequency
+
+do I need to read the file in every function?
+how do I target the list of tuples (sorted_word_count) given returned from function print_word_freq? sorted_word_count doesn't exist outside the function.
