@@ -68,12 +68,18 @@ def print_word_freq(file):
     # layout: spaces, current key, vertical line, freq, stars === freq
 
 
-def add_stars(tuples):
-    word_freq = open_file(file)
-    for tuple in tuples:
-        stars = tuple[1] + ' ' + '*'*tuple[1]
-    print(stars)
-    return stars
+# EXAMPLE FROM MICHAEL // SORTED_LIST WAS SORTED_DICTIONARY
+    # for thing, count in sorted_list:
+    #     asterisks = '*' * count
+    #     print(f'{thing} | {count} {asterisks}')
+
+
+# def add_stars(tuples):
+#     word_freq = open_file(file)
+#     for tuple in tuples:
+#         stars = tuple[1] + ' ' + '*'*tuple[1]
+#     print(stars)
+#     return stars
 
 
 if __name__ == "__main__":
